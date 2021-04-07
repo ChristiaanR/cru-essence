@@ -1,27 +1,31 @@
 @use 'forwards' as *;
 
+nav {
+	a {
+		text-decoration: none;
+	}
+}
 .navbar {
 	position: sticky;
 	top: 0;
-}
-nav {
-	.navbar-toggle {
+	text-align: center;
+
+	&-brand {
+		padding: 0.5em 1em;
+		display: block;
+	}
+	&-toggle {
 		float: right;
 		background: $clr-primary;
 		border-radius: 5px;
 		color: $clr-white;
 		padding: 0.25rem 0.5rem;
-		i:first-of-type {
-			margin-right: -1em;
-		}
-		i + i {
-			opacity: 0;
-		}
 	}
+
 	ul {
 		@extend %utl-list-reset;
-		text-align: center;
 	}
+
 	.nav-item /* li */ {
 		line-height: 3em;
 		&.active {
@@ -39,6 +43,15 @@ nav {
 /* toggle menu in small screen with chackbox 'hack' */
 .navbar-checkbox {
 	display: none; /* hide the checkbox -duh- */
+}
+.navbar-toggle {
+	i {
+		margin-right: -1em;
+	}
+	i + i {
+		opacity: 0;
+		margin-right: 0;
+	}
 }
 .navbar-collapse .nav-item {
 	transition: height 0.3s ease;

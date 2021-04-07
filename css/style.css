@@ -1,8 +1,9 @@
 /* Colors :: clr- */
+/* Colors utilized */
 /* Text :: txt- */
 /* Sizing :: size- */
 /* Uttilities prefixed with utl- */
-nav ul {
+.navbar ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -61,6 +62,17 @@ h3 {
 		color: #400626;
 }
 
+a:link, a:visited {
+		color: #003a41;
+}
+a:hover, a:focus {
+		color: #400626;
+}
+a:active {
+		color: #400626;
+		background: #ccc;
+}
+
 .container {
 		max-width: 96%;
 		margin: 0 auto;
@@ -81,37 +93,36 @@ h3 {
 		}
 }
 
+nav a {
+		text-decoration: none;
+}
+
 .navbar {
 		position: sticky;
 		top: 0;
+		text-align: center;
 }
-
-nav .navbar-toggle {
+.navbar-brand {
+		padding: 0.5em 1em;
+		display: block;
+}
+.navbar-toggle {
 		float: right;
 		background: #003a41;
 		border-radius: 5px;
 		color: #fff;
 		padding: 0.25rem 0.5rem;
 }
-nav .navbar-toggle i:first-of-type {
-		margin-right: -1em;
-}
-nav .navbar-toggle i + i {
-		opacity: 0;
-}
-nav ul {
-		text-align: center;
-}
-nav .nav-item {
+.navbar .nav-item {
 		line-height: 3em;
 }
-nav .nav-item.active {
+.navbar .nav-item.active {
 		background: #003a41;
 }
-nav .nav-link {
+.navbar .nav-link {
 		display: block;
 }
-nav .nav-link:hover {
+.navbar .nav-link:hover {
 		background: rgba(0, 0, 0, 0.1);
 }
 
@@ -119,6 +130,14 @@ nav .nav-link:hover {
 .navbar-checkbox {
 		display: none;
 		/* hide the checkbox -duh- */
+}
+
+.navbar-toggle i {
+		margin-right: -1em;
+}
+.navbar-toggle i + i {
+		opacity: 0;
+		margin-right: 0;
 }
 
 .navbar-collapse .nav-item {

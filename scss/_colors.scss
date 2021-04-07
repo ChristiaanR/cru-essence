@@ -5,3 +5,18 @@ h2,
 h3 {
 	color: $clr-accent;
 }
+
+a {
+	&:link,
+	&:visited {
+		color: $clr-link;
+	}
+	&:hover,
+	&:focus {
+		color: $clr-link-hover;
+	}
+	&:active {
+		color: $clr-link-hover;
+		background: $clr-light;
+	}
+}
