@@ -39,14 +39,11 @@
 					<?= $Wcms->siteTitle() ?>
 				</a>
 
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggler navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
-						<span class="navbar-toggler-icon">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</span>
-					</button>
+
+					<input type="checkbox" id="navbarCheckbox" class="navbar-checkbox" />
+          <label for="navbarCheckbox" class="navbar-hamburger" title="Click to expand menu">
+            <span class="fa fa-bars"></span>
+          </label>
 				</div>
 
 				<div class="collapse navbar-collapse" id="menu-collapse">
