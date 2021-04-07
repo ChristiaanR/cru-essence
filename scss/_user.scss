@@ -1,0 +1,7 @@
+@use 'forwards' as *;
+
+@media (prefers-reduced-motion) {
+	.animation {
+		animation-name: dissolve;
+	}
+}

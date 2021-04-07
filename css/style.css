@@ -1,3 +1,13 @@
+/* Colors :: clr- */
+/* Text :: txt- */
+/* Sizing :: size- */
+/* Uttilities prefixed with utl- */
+nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+}
+
 /* Prevent adjustments of font size after orientation changes in iOS*/
 html {
 		font-size: 1em;
@@ -7,7 +17,9 @@ html {
 		/* 1 */
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 		box-sizing: inherit;
 }
 
@@ -39,9 +51,6 @@ sup {
 		top: -0.5em;
 }
 
-/* Colors :: clr- */
-/* Text :: txt- */
-/* Sizing :: size- */
 h1,
 h2,
 h3 {
@@ -65,5 +74,11 @@ h2,
 h3,
 h4 {
 		font-family: Georgia;
+}
+
+@media (prefers-reduced-motion) {
+		.animation {
+				animation-name: dissolve;
+		}
 }
 /*# sourceMappingURL=style.css.map */

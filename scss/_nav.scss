@@ -1,3 +1,11 @@
+@use 'forwards' as *;
+
 #navbarCheckbox {
 	display: none;
+}
+
+nav {
+	ul {
+		@extend %utl-list-reset;
+	}
 }
