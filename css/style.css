@@ -1,4 +1,69 @@
-h1, h2, h3 {
+/* Prevent adjustments of font size after orientation changes in iOS*/
+html {
+		font-size: 1em;
+		line-height: 1.6em;
+		box-sizing: border-box;
+		-webkit-text-size-adjust: 100%;
+		/* 1 */
+}
+
+*, *:before, *:after {
+		box-sizing: inherit;
+}
+
+/* 'Resets' - usable stuff from normalize.css */
+body {
+		margin: 0;
+}
+
+/* Add the correct font weight in Chrome, Edge, and Safari. */
+b,
+strong {
+		font-weight: bolder;
+}
+
+/* Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub,
+sup {
+		font-size: 75%;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+}
+
+sub {
+		bottom: -0.25em;
+}
+
+sup {
+		top: -0.5em;
+}
+
+/* Colors :: clr- */
+/* Text :: txt- */
+/* Sizing :: size- */
+h1,
+h2,
+h3 {
 		color: #400626;
+}
+
+.container {
+		max-width: 96%;
+}
+
+#navbarCheckbox {
+		display: none;
+}
+
+body {
+		font-family: Arial;
+}
+
+h1,
+h2,
+h3,
+h4 {
+		font-family: Georgia;
 }
 /*# sourceMappingURL=style.css.map */

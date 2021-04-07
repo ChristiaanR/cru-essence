@@ -29,53 +29,44 @@
 
 	</head>
 
-	<body class="d-flex flex-column">
+	<body class="page">
 		<?= $Wcms->settings() ?>
 		<?= $Wcms->alerts() ?>
 
 		<nav class="navbar navbar-expand-lg navbar-light navbar-default">
 			<div class="container">
+
+				<input type="checkbox" id="navbarCheckbox" class="navbar-checkbox" aria-hidden="true" />
+				<label for="navbarCheckbox" class="navbar-hamburger" title="Click to expand menu"> 
+					<i class=burger-bar>-</i>
+					<i class=burger-bar>-</i>
+					<i class=burger-bar>-</i>
+				</label>
+
 				<a class="navbar-brand" href="<?= $Wcms->url() ?>">
 					<?= $Wcms->siteTitle() ?>
 				</a>
 
-
-					<input type="checkbox" id="navbarCheckbox" class="navbar-checkbox" />
-          <label for="navbarCheckbox" class="navbar-hamburger" title="Click to expand menu">
-            <span class="fa fa-bars"></span>
-          </label>
-				</div>
-
-				<div class="collapse navbar-collapse" id="menu-collapse">
-					<ul class="nav navbar-nav navbar-right ml-auto">
+				<div class="navbar-collapse" id="menu-collapse">
+					<ul class="mainnav">
 						<?= $Wcms->menu() ?>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<section class="container mt-5 mb-5">
-			<div class="row">
-				<div class="col-lg-12 my-auto text-center padding40">
-					<?= $Wcms->page('content') ?>
+		<main class="page-content">
+			<section class="core">
+				<?= $Wcms->page('content') ?>
+			</section>
 
-				</div>
-			</div>
-		</section>
+			<section class="additional">
+				<?= $Wcms->block('subside') ?>
+			</section>
+	</main>
 
-		<div class="h-05"></div>
-
-		<section class="container-fluid mt-5 mb-5 flex-grow">
-			<div class="row customBackground">
-				<div class="col-lg-12 my-auto text-center padding40 resetTextRotation">
-					<?= $Wcms->block('subside') ?>
-
-				</div>
-			</div>
-		</section>
-
-		<footer class="mt-4 footer">
-			<div class="container-fluid py-3 text-right">
+		<footer class="page-footer">
+			<div class="container">
 				<?= $Wcms->footer() ?>
 			</div>
 		</footer>

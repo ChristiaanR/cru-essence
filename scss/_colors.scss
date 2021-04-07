@@ -1,5 +1,7 @@
-@use 'variables' as *;
+@use 'forwards' as *;
 
-h1, h2, h3 {
-  color: $clr-accent;
+h1,
+h2,
+h3 {
+	color: $clr-accent;
 }
