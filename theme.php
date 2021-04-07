@@ -30,6 +30,8 @@
 
 		<?= $Wcms->css() ?>
 
+		<script src="https://kit.fontawesome.com/81030039bd.js" crossorigin="anonymous"></script>
+
 	</head>
 
 	<body class="page">
@@ -41,9 +43,8 @@
 
 				<input type="checkbox" id="navbarCheckbox" class="navbar-checkbox" aria-hidden="true" />
 				<label for="navbarCheckbox" class="navbar-toggle" title="Click to expand menu"> 
-					<i class=burger-bar>-</i>
-					<i class=burger-bar>-</i>
-					<i class=burger-bar>-</i>
+					<i class="fas fa-bars"></i>
+					<i class="fas fa-times"></i>
 				</label>
 
 				<a class="navbar-brand" href="<?= $Wcms->url() ?>">

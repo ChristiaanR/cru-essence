@@ -91,7 +91,13 @@ nav .navbar-toggle {
 		background: #003a41;
 		border-radius: 5px;
 		color: #fff;
-		padding: 0.25rem;
+		padding: 0.25rem 0.5rem;
+}
+nav .navbar-toggle i:first-of-type {
+		margin-right: -1em;
+}
+nav .navbar-toggle i + i {
+		opacity: 0;
 }
 nav ul {
 		text-align: center;
@@ -124,6 +130,17 @@ nav .nav-link:hover {
 
 .navbar-checkbox:checked ~ .navbar-collapse .nav-item {
 		height: 3em;
+}
+
+.navbar-checkbox:checked ~ .navbar-toggle {
+		/* toggle icon */
+}
+.navbar-checkbox:checked ~ .navbar-toggle i {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+}
+.navbar-checkbox:checked ~ .navbar-toggle i + i {
+		opacity: 1;
 }
 
 /* End toggle */

@@ -10,7 +10,13 @@ nav {
 		background: $clr-primary;
 		border-radius: 5px;
 		color: $clr-white;
-		padding: 0.25rem;
+		padding: 0.25rem 0.5rem;
+		i:first-of-type {
+			margin-right: -1em;
+		}
+		i + i {
+			opacity: 0;
+		}
 	}
 	ul {
 		@extend %utl-list-reset;
@@ -42,5 +48,15 @@ nav {
 }
 .navbar-checkbox:checked ~ .navbar-collapse .nav-item {
 	height: 3em;
+}
+.navbar-checkbox:checked ~ .navbar-toggle {
+	/* toggle icon */
+	i {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	i + i {
+		opacity: 1;
+	}
 }
 /* End toggle */
