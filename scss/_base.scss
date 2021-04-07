@@ -3,7 +3,6 @@
 /* Prevent adjustments of font size after orientation changes in iOS*/
 html {
 	font-size: 1em;
-	line-height: 1.6em;
 	box-sizing: border-box;
 	-webkit-text-size-adjust: 100%; /* 1 */
 }
@@ -16,6 +15,7 @@ html {
 /* 'Resets' - usable stuff from normalize.css */
 body {
 	margin: 0;
+	line-height: 1.6em;
 }
 
 /* Add the correct font weight in Chrome, Edge, and Safari. */
@@ -40,4 +40,8 @@ sub {
 
 sup {
 	top: -0.5em;
+}
+
+label {
+	cursor: pointer;
 }

@@ -22,9 +22,11 @@
 
 		<title><?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?></title>
 
-		<link rel="stylesheet" rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
+<!-- 		<link rel="stylesheet" rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ -->		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
 
 		<?= $Wcms->css() ?>
 
@@ -38,7 +40,7 @@
 			<div class="container">
 
 				<input type="checkbox" id="navbarCheckbox" class="navbar-checkbox" aria-hidden="true" />
-				<label for="navbarCheckbox" class="navbar-hamburger" title="Click to expand menu"> 
+				<label for="navbarCheckbox" class="navbar-toggle" title="Click to expand menu"> 
 					<i class=burger-bar>-</i>
 					<i class=burger-bar>-</i>
 					<i class=burger-bar>-</i>

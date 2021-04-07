@@ -2,7 +2,8 @@
 
 .container {
 	max-width: $size-container;
-	background: #eee;
+	margin: 0 auto;
+	// background: #eee;
 	@include mx-bp(small) {
 		background: pink;
 	}
