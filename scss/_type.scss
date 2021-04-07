@@ -2,10 +2,14 @@
 
 body {
 	font-family: $txt-font-primary;
+	font-weight: 200;
 }
 h1,
 h2,
 h3,
 h4 {
 	font-family: $txt-font-accent;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	word-spacing: 0.1em;
 }

@@ -2,4 +2,14 @@
 
 .container {
 	max-width: $size-container;
+	background: #eee;
+	@include mx-bp(small) {
+		background: pink;
+	}
+	@include mx-bp(medium) {
+		background: lavender;
+	}
+	@include mx-bp(large) {
+		background: antiquewhite;
+	}
 }

@@ -59,6 +59,22 @@ h3 {
 
 .container {
 		max-width: 96%;
+		background: #eee;
+}
+@media (min-width: 48rem) {
+		.container {
+				background: pink;
+		}
+}
+@media (min-width: 64rem) {
+		.container {
+				background: lavender;
+		}
+}
+@media (min-width: 72rem) {
+		.container {
+				background: antiquewhite;
+		}
 }
 
 #navbarCheckbox {
@@ -66,14 +82,18 @@ h3 {
 }
 
 body {
-		font-family: Arial;
+		font-family: "Red Hat Text", "Arial", sans-serif;
+		font-weight: 200;
 }
 
 h1,
 h2,
 h3,
 h4 {
-		font-family: Georgia;
+		font-family: "Bitter", serif;
+		font-weight: 700;
+		letter-spacing: -0.025em;
+		word-spacing: 0.1em;
 }
 
 @media (prefers-reduced-motion) {

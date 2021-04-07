@@ -1,13 +1,13 @@
 $breakpoints: (
 	'small': (
-		min-width: 32rem
+		min-width: 48rem,
 	),
 	'medium': (
-		min-width: 48rem
+		min-width: 64rem,
 	),
 	'large': (
-		min-width: 64rem
-	)
+		min-width: 80rem,
+	),
 ) !default;
 
 // @author Hugo Giraudel
