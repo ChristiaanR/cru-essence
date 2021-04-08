@@ -34,7 +34,7 @@
 
 	</head>
 
-	<body class="page">
+	<body class="page <?= $Wcms->page('title') //adding unique class per page for styling// ?>">
 		<?= $Wcms->settings() ?>
 		<?= $Wcms->alerts() ?>
 
