@@ -22,8 +22,8 @@
 
 		<title><?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?></title>
 
-<!-- 		<link rel="stylesheet" rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
- -->		<link rel="preconnect" href="https://fonts.gstatic.com">
+ 		<link rel="stylesheet" rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		
 		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
@@ -38,37 +38,36 @@
 		<?= $Wcms->settings() ?>
 		<?= $Wcms->alerts() ?>
 
-		<nav class="navbar navbar-expand-lg navbar-light navbar-default">
-			<div class="container">
+		<nav class="navbar navbar-nav sticky-top navbar-expand-md navbar-dark bg-primary">
 
-				<input type="checkbox" id="navbarCheckbox" class="navbar-checkbox" aria-hidden="true" />
-				<label for="navbarCheckbox" class="navbar-toggle" title="Click to expand menu"> 
-					<i class="fas fa-bars"></i>
-					<i class="fas fa-times"></i>
-				</label>
+				<a class="navbar-brand" href="<?= $Wcms->url() ?>"><?= $Wcms->siteTitle() ?></a>
 
-				<a class="navbar-brand" href="<?= $Wcms->url() ?>">
-					<?= $Wcms->siteTitle() ?>
-				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-				<div class="navbar-collapse" id="menu-collapse">
-					<ul class="mainnav">
+				<div class="collapse navbar-collapse" id="mainMenu">
+					<ul class="nav justify-content-center">
 						<?= $Wcms->menu() ?>
 					</ul>
 				</div>
-			</div>
 		</nav>
 
-		<main class="page-content">
-			<section class="core">
-				<?= $Wcms->page('content') ?>
-			</section>
+		<div class="optional-header"></div>
 
-			<section class="additional">
-				<?= $Wcms->block('subside') ?>
-			</section>
-	</main>
+		<div class="page-content">
 
+			<main class="main-content container">
+				<section class="core">
+					<?= $Wcms->page('content') ?>
+				</section>
+				
+				<section class="additional">
+					<?= $Wcms->block('subside') ?>
+				</section>
+			</main>
+		</div>
+			
 		<footer class="page-footer">
 			<div class="container">
 				<?= $Wcms->footer() ?>

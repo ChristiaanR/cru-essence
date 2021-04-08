@@ -1,5 +1,6 @@
 @use 'forwards' as *;
 
 .navbar {
-	background: $clr-accent;
+	//	background: $clr-accent;
+	box-shadow: 0 0 3px red;
 }

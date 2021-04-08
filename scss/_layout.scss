@@ -1,10 +1,11 @@
 @use 'forwards' as *;
 
 .container {
+	// basic container
 	max-width: $size-container;
 	margin: 0 auto;
-	// background: #eee;
-	@include mx-bp(small) {
+
+	/* 	@include mx-bp(small) {
 		background: pink;
 	}
 	@include mx-bp(medium) {
@@ -13,4 +14,11 @@
 	@include mx-bp(large) {
 		background: antiquewhite;
 	}
+ */
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: 5fr 3fr;
+	grid-gap: 5vw;
 }
