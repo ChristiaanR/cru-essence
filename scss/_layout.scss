@@ -1,24 +1,39 @@
 @use 'forwards' as *;
 
-.container {
-	// basic container
-	max-width: $size-container;
-	margin: 0 auto;
-
-	/* 	@include mx-bp(small) {
-		background: pink;
-	}
-	@include mx-bp(medium) {
-		background: lavender;
-	}
-	@include mx-bp(large) {
-		background: antiquewhite;
-	}
- */
+main img {
+	max-width: 100%;
 }
 
-.main-content {
-	display: grid;
-	grid-template-columns: 5fr 3fr;
-	grid-gap: 5vw;
+.duality {
+	padding: 2rem;
+	background: linear-gradient(
+		135deg,
+		rgba(221, 173, 205, 1) 50%,
+		rgba(84, 9, 62, 1) 50%,
+		rgba(84, 9, 62, 1) 50%
+	);
+	background-size: 10px 10px;
+	border: 3px solid rgba(84, 9, 62, 1);
+	h1 {
+		background: linear-gradient(
+			135deg,
+			rgba(221, 173, 205, 1) 50%,
+			rgba(84, 9, 62, 1) 50%,
+			rgba(84, 9, 62, 1) 50%
+		);
+		background-size: 10px 10px;
+		filter: invert(1);
+		background-clip: text;
+		color: transparent;
+		margin: 0;
+		background-position: -2rem -2rem;
+		// mix-blend-mode: exclusion;
+		// text-transform: uppercase;
+		font-weight: 900;
+		span {
+			position: relative;
+			left: 2rem;
+			top: -2rem;
+		}
+	}
 }

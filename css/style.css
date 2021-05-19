@@ -3,14 +3,60 @@
 /* Text :: txt- */
 /* Sizing :: size- */
 /* Uttilities prefixed with utl- */
+main img {
+		max-width: 100%;
+}
+
+.duality {
+		padding: 2rem;
+		background: linear-gradient(135deg, #ddadcd 50%, #54093e 50%, #54093e 50%);
+		background-size: 10px 10px;
+		border: 3px solid #54093e;
+}
+.duality h1 {
+		background: linear-gradient(135deg, #ddadcd 50%, #54093e 50%, #54093e 50%);
+		background-size: 10px 10px;
+		filter: invert(1);
+		-webkit-background-clip: text;
+		        background-clip: text;
+		color: transparent;
+		margin: 0;
+		background-position: -2rem -2rem;
+		font-weight: 900;
+}
+.duality h1 span {
+		position: relative;
+		left: 2rem;
+		top: -2rem;
+}
+
+h1,
+h2,
+h3 {
+		color: #400626;
+}
+
+a:link, a:visited {
+		color: #003a41;
+}
+a:hover, a:focus {
+		color: #400626;
+}
+a:active {
+		color: #400626;
+		background: #ccc;
+}
+
+.bg-custom-primary {
+		background: #003a41;
+}
+
 @media (prefers-reduced-motion) {
 		.animation {
 				animation-name: dissolve;
 		}
 }
 /* @use 'base';
-@use 'colors';
-@use 'layout';
 @use 'nav';
 @use 'type';
 @use 'theme'; */

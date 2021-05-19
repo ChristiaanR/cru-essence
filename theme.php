@@ -34,11 +34,11 @@
 
 	</head>
 
-	<body class="page <?= $Wcms->page('title') //adding unique class per page for styling// ?>">
+	<body class="page <?= $Wcms->page('slug') //adding unique class per page for styling// ?>">
 		<?= $Wcms->settings() ?>
 		<?= $Wcms->alerts() ?>
 
-		<nav class="navbar navbar-nav sticky-top navbar-expand-md navbar-dark bg-primary">
+		<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-custom-primary">
 
 				<a class="navbar-brand" href="<?= $Wcms->url() ?>"><?= $Wcms->siteTitle() ?></a>
 
@@ -47,7 +47,7 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="mainMenu">
-					<ul class="nav justify-content-center">
+					<ul class="navbar-nav ml-auto">
 						<?= $Wcms->menu() ?>
 					</ul>
 				</div>
@@ -55,22 +55,28 @@
 
 		<div class="optional-header"></div>
 
-		<div class="page-content">
+		<div class="page-content container">
+			<div class="row">
 
-			<main class="main-content container">
-				<section class="core">
-					<?= $Wcms->page('content') ?>
-				</section>
-				
-				<section class="additional">
+				<main class="main-content col-md-8">
+					<section class="core">
+						<?= $Wcms->page('content') ?>
+					</section>
+					<div class="duality"><h1>Ficaria verna <br> Ook gekend als: Ranunculus ficaria, Ranunculus ficaria <span>subsp. bulbilifer</span></h1>	</div>
+				</main>
+				<section class="additional col-md-4">
 					<?= $Wcms->block('subside') ?>
 				</section>
-			</main>
+			</div>
+		
 		</div>
 			
 		<footer class="page-footer">
 			<div class="container">
-				<?= $Wcms->footer() ?>
+				<div class="row">
+
+					<?= $Wcms->footer() ?>
+				</div>
 			</div>
 		</footer>
 
